@@ -3,7 +3,7 @@
 <br />
 
 # App Description
-### The ExpLocker App will allow people to request carrier to deliver the package into the access point whenpeople unable to receive their package when the package is out for delivery.
+The ExpLocker App will allow people to request carrier to deliver the package into the access point whenpeople unable to receive their package when the package is out for delivery.
 ### There are 3 kinds of users. Client (people that unable to receive their package), Driver (people that will redelivery the package to the client), and Carrier (who delivers the package into access point). They are reference by value 1=Client, 2=Driver, 3=Carrier.
 ### People need to use the register function before using the app. The role represents their identity. Where 1=Client, 2=Driver, 3=Carrier. personName represent their name, the carrier can just type UPS, USPS, etc. hAddress represents the home address, only client require to write their home address. licenseNumber represents their license number or id number. Secret represents 32 bytes password that the user wants to input, this secret will hash the user’s address for authenticating.
 ### Simple register will be register(1,”Chenyi”,”Chestnut Ridge Road”,”123456789”,”0x42652600000….”)
