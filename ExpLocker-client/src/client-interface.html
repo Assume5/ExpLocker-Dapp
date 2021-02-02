@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="css/user.css">
+    <title>Client</title>
+</head>
+<body>
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+  <div class="queue-table">
+    <div class="w3-container w3-center w3-animate-zoom">
+        <table class="table table-striped table-hover table-curved " id="queue_table">
+              <thead class="bg-primary text-white">
+              <tr>
+                  <th scope="col">Tips</th>
+                  <th scope="col">Request Address</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Driver Address</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c</td>
+                  <td>Accepted</td>
+                  <td>0x14723A09ACff6D2A60DcdF7aA4AFf308FDDC160C</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c</td>
+                  <td>Accepted</td>
+                  <td>0x14723A09ACff6D2A60DcdF7aA4AFf308FDDC160C</td>
+                </tr> -->
+              </tbody>
+          </table>
+    </div>
+  </div>
+  </div>
+    <ul class="list-group">
+      <div class="w3-container w3-center w3-animate-zoom">
+      <li class="list-group-item active">Function For Client</li>
+      <li class="list-group-item">To Access Point <hr>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-primary" type="button" id="requestToAP">Request</button>
+          </div>
+          <input type="number" class="form-control"  placeholder="Tip$" aria-label="" aria-describedby="basic-addon1" id="tip-carrier">
+        </div>
+      </li>
+      <li class="list-group-item"> Request To Self Pick Up<hr>
+        <button class="btn btn-outline-primary" type="button" id="requestPick">Pick up</button>
+        <button class="btn btn-outline-danger" type="button" id="cancelPick">Cancel Pick up</button><br><br>
+        <button class="btn btn-outline-primary" type="button" id="requestAPLocation">Request Access Point Location</button><br><br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-primary" type="button" id="requestLocationPin">Request Locker Location Pin</button>
+          </div>
+          <input type="password" class="form-control" placeholder="Password" aria-label="" aria-describedby="basic-addon1" id="password-location-pin">
+        </div>
+      </li>
+      <li class="list-group-item">Request Driver<hr>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-primary" type="button" id="requestRedelivery">Request Redelivery</button>
+          </div>
+          <input type="number" class="form-control"  placeholder="Tip$ For Redelivery" aria-label="" aria-describedby="basic-addon1" id="tip-driver">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-danger" type="button" id="cancel-redelivery">Cancel</button>
+          </div>
+          <input type="text" class="form-control"  placeholder="Driver Address" aria-label="" aria-describedby="basic-addon1" id="driver-address-cancel">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-primary" type="button" id="driver-info-client">Request Driver Info</button>
+          </div>
+          <input type="text" class="form-control"  placeholder="Driver Address" aria-label="" aria-describedby="basic-addon1" id="driver-address-info">
+          <input type="password" class="form-control"  placeholder="Password" aria-label="" aria-describedby="basic-addon1" id="password-driver-info">
+        </div>
+      </li>
+      <li class="list-group-item">Recieve <hr>
+            <button class="btn btn-outline-primary" type="button" id="recieved-package">Package Recieved</button>
+      </li>
+
+      </div>
+    </ul>
+    <ul class="list-group-package">
+      <div class="w3-container w3-center w3-animate-zoom">
+      <li class="list-group-item">Package Arraving today? <hr>
+        <div class="form-group centered"> 
+          <input type="text" id="Package-Today" class="form-control text-center " placeholder="Flase" required autofocus readonly></div>
+      </li>
+
+      </div>
+    </ul>
+    <ul class="list-group-phases">
+      <div class="w3-container w3-center w3-animate-zoom">
+      <li class="list-group-item">Current Phase <hr>
+        <div class="form-group centered"> 
+          <input type="text" id="Current-Phase" class="form-control text-center " placeholder="NON" required autofocus readonly></div>
+      </li>
+
+      </div>
+    </ul>
+          <script>
+              //send people back when refresh
+        //if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+        //location.href = './index.html';
+        //}
+          </script>
+	          <script src="js/dist/jquery.min.js"></script>
+          <script src="js/dist/bootstrap.min.js"></script>
+          <script src="js/dist/jquery.countdown.min.js"></script>
+          <script src="js/dist/wow.js"></script>
+          <script src="js/dist/custom.js"></script>
+          <script src="js/dist/bootstrap.min.js"></script>
+          <script src="js/dist/toastr.min.js"></script>
+          <script src="js/dist/web3.min.js"></script>
+          <script src="js/dist/truffle-contract.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+          <script src="js/app.js"></script>
+</body>
+</html>

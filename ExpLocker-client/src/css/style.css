@@ -1,0 +1,145 @@
+
+@keyframes slidein-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+body {background-color: #201d37;}
+label,h3,h5 {
+    cursor: pointer;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin: 3px;
+}
+hr{
+    background-color:gray
+}
+.Buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 36rem;
+}
+form {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+  }
+.Owner-login{
+    position: absolute;
+    top: 20px;
+    right:20px;
+    background-color: transparent;
+    color: #4099ff;
+    border-color: #4099ff;
+    animation: 0.5s slidein-right;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #201d37;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 500px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  @keyframes movingTopToBottom {
+    0% {
+      top: 50px;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+.Location{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    animation: 1s movingTopToBottom;
+    text-align: center;
+}
+.notification0 {
+  background-color: #2980B9;
+}
+
+.notification1 {
+  background-color: #F39C12;
+}
+
+.notification2 {
+  background-color: #D35400;
+}
+
+.notification3 {
+  background-color: #16A085;
+}
+
+.notification4{
+  background-color: #2C3E50;
+}
+
+.toast-error, .notification5{
+  background-color: #C0392B;
+}

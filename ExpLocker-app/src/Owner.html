@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Owner</title>
+</head>
+<body>
+    <form>
+        <div class="form-group row Location">
+            <div class="col-sm-10">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-primary" type="button" id="location-assign">Set Locker Location</button>
+                    </div>
+                    <input type="text" class="form-control"  placeholder="Locker Location" aria-label="" aria-describedby="basic-addon1" id="owner-locker-location">
+                  </div>
+            </div>
+    </form>
+    <script>
+        //send people back when refresh
+        if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+        location.href = './index.html';
+        }
+    </script>
+    <script src="js/dist/jquery.min.js"></script>
+      <script src="js/dist/bootstrap.min.js"></script>
+      <script src="js/dist/jquery.countdown.min.js"></script>
+      <script src="js/dist/wow.js"></script>
+      <script src="js/dist/custom.js"></script>
+      <script src="js/dist/bootstrap.min.js"></script>
+      <script src="js/dist/toastr.min.js"></script>
+      <script src="js/dist/web3.min.js"></script>
+      <script src="js/dist/truffle-contract.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+      <script src="js/app.js"></script>
+</body>
+</html>

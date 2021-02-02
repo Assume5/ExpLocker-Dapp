@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {background-color: #201d37;}
+        .request-table{
+            position: absolute;
+            top: 5%;
+            left:5%;
+          }
+          .table-curved {
+            background: white;
+            border: 1px solid #201d37;
+            border-radius: 5px;
+            border-spacing: 0px;
+            border-collapse: separate;
+        }
+        .list-group{
+            position: absolute;
+            top: 5%;
+            left:40%;
+            width:50%;
+          }
+          .notification0 {
+            background-color: #2980B9;
+          }
+          
+          .notification1 {
+            background-color: #F39C12;
+          }
+          
+          .notification2 {
+            background-color: #D35400;
+          }
+          
+          .notification3 {
+            background-color: #16A085;
+          }
+          
+          .notification4{
+            background-color: #2C3E50;
+          }
+          
+          .toast-error, .notification5{
+            background-color: #C0392B;
+          }
+    </style>
+    <title>Carrier</title>
+</head>
+<body>
+    <div class="request-table">
+        <div class="w3-container w3-center w3-animate-zoom">
+            <table id="carrier-tabel" class="tablet table-striped table-hover table-curved w-25 " >
+                  <thead class="bg-primary text-white">
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col" class="col-1">Requesting To Access Point Address</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- <tr>
+                      <th scope="row">1</th>
+                      <td>0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c</td>
+                    </tr> -->
+                  </tbody>
+              </table>
+        </div>
+      </div>
+      <ul class="list-group">
+        <div class="w3-container w3-center w3-animate-zoom">
+
+        <li class="list-group-item active">Function For Carrier<hr>
+        </li>
+        <li class="list-group-item">Client<hr>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-primary" type="button" id="carrier-assign">Assign</button>
+                </div>
+                <input type="text" class="form-control"  placeholder="Client Address" aria-label="" aria-describedby="basic-addon1" id="client-address">
+              </div>
+        </li>
+        <li class="list-group-item">Delivered<hr>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-primary" type="button" id="delivered-access">Delivered</button>
+                </div>
+                <input type="text" class="form-control"  placeholder="Client Address" aria-label="" aria-describedby="basic-addon1" id="client-address-delivered">
+                <input type="text" class="form-control"  placeholder="Locker Position" aria-label="" aria-describedby="basic-addon1" id="locker-position">
+                <input type="text" class="form-control"  placeholder="Locker Pin" aria-label="" aria-describedby="basic-addon1" id="locker-pin">
+                <input type="password" class="form-control"  placeholder="Password" aria-label="" aria-describedby="basic-addon1" id="password">
+              </div>
+        </li>
+        <li class="list-group-item">Request<hr>
+            <button class="btn btn-outline-primary" type="button" id="requestAPLocation">Request Access Point Location</button><br><br>
+        </li>
+        <li class="list-group-item">Withdraw <hr>
+            <button class="btn btn-outline-primary" type="button" id="withdraw">Withdraw</button>
+      </li>
+        </div>
+      </ul>
+      <script>
+        //send people back when refresh
+        //if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+        //location.href = './index.html';
+        //}
+      </script>
+      <script src="js/dist/jquery.min.js"></script>
+      <script src="js/dist/bootstrap.min.js"></script>
+      <script src="js/dist/jquery.countdown.min.js"></script>
+      <script src="js/dist/wow.js"></script>
+      <script src="js/dist/custom.js"></script>
+      <script src="js/dist/bootstrap.min.js"></script>
+      <script src="js/dist/toastr.min.js"></script>
+      <script src="js/dist/web3.min.js"></script>
+      <script src="js/dist/truffle-contract.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+      <script src="js/app.js"></script>
+</body>
+</html>
