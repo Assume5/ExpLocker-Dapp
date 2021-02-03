@@ -73,7 +73,7 @@ It will DECRYPTED when owner, or the person who have permission and needs to acc
 <br />
 
 # Function Description For Smart Contract.
-##The chairperson function.
+## The chairperson function.
 setLocation(string memory location) this allows the chairperson to set access point location.
 <br />
 
@@ -169,7 +169,7 @@ If you need ether please visit here [Ether](https://faucet.dimensions.network/) 
 ### Most of the time I am waiting for response from infura contract interaction. Please skip it.
 ![Register](/img/Register.png)  Client, Driver, Carrier registered
 ### Note: When you login if the username(address) line are empty please HARD REFRESH the site. CTRL+F5.
-##Carrier Login
+## Carrier Login
 ![Carrer Login](/img/carrier-login.png) Carrier assign by input client address. That means that client have packages arriving today.
 <br />
 
