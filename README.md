@@ -16,13 +16,14 @@ The name, address, and license number will be encrypted, so don't worry about le
 To make this app work, the carrier must use assign function first. Assign(address client) where Carrier will put the client's address if the carriers delivery client's package
 
 There are 5 event phases.
+```
     1. Init: When client register, the Init Phase begins.
     2. StartClientAction, When carrier delivered client’s package to access point this phase begin.
     3. pickByDriver: When client request redelivery.
     4. pickByClient: When client request to pick up by itself
     5. Done: When driver delivered the packages to client’s home or when client received their package from the access point.
     Note: Every client will have its own phase. When hit the Done phase, it will begin the Init phase again, so carriers can have delivery next time.
-
+```
 # Installation.
 In order to compile the app, you must first have Ganache and node.js installed.
 
