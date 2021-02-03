@@ -183,7 +183,7 @@ If you need ether please visit here [Ether](https://faucet.dimensions.network/) 
 <br />
 
 ## Back to Client
-[!Current-Phase](/img/Current-Phase/png) The current phase are waiting for client action, this means that client’s package has been delivered to the access point, waiting for client decision(self-pickup or request driver)
+![Current-Phase](/img/Current-Phase/png) The current phase are waiting for client action, this means that client’s package has been delivered to the access point, waiting for client decision(self-pickup or request driver)
 Client decided to request a driver ![redeliveryTip](/img/redeliveryTip.png) by giving 1$ tips. After request success this table in the left will shown like this ![Client-table](/img/Client-table.png) This means that you have request for redelivery so when driver saw their table they can accept it.
 
 ## Driver Login
