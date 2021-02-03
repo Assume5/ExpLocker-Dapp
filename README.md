@@ -24,16 +24,18 @@ There are 5 event phases.
     Note: Every client will have its own phase. When hit the Done phase, it will begin the Init phase again, so carriers can have delivery next time.
 
 # Installation.
-### In order to compile the app, you must first have Ganache and node.js installed.
-### [Ganache](https://www.trufflesuite.com/) this will help you install Ganache
-### After you installed your node.js and Ganache, open the terminal and type to install truffle.
+In order to compile the app, you must first have Ganache and node.js installed.
+
+[Ganache](https://www.trufflesuite.com/) this will help you install Ganache
+
+After you installed your node.js and Ganache, open the terminal and type to install truffle.
 ```bash
 npm install -g truffle 
 ```
 <br />
 
 # Compile the app
-### Open Ganache and click quick start.
+Open Ganache and click quick start.
 
 ```bash
 cd ExpLocker-Dapp
@@ -46,9 +48,11 @@ npm install //to install
 npm start //to start listing.
 ```
 
-### After npm start, open Google Chrome and type http://localhost:3000/ to start the app. Connect the account you needed in metamask.
-### Make sure you have at least 4 accounts connected. Account 1 will be the chairperson. Then you can start registering using Account 2 - Account 4. Each account registers their role i.e. Account 2 be Client, Account 3 be Driver and let Account 3 be the Carrier.
-## ![MetaMask](/img/Metamask.png) After selecting the account, you want, you can click next, and then click connect. After doing these steps you may start using the APP.
+After npm start, open Google Chrome and type http://localhost:3000/ to start the app. Connect the account you needed in metamask.
+
+Make sure you have at least 4 accounts connected. Account 1 will be the chairperson. Then you can start registering using Account 2 - Account 4. Each account registers their role i.e. Account 2 be Client, Account 3 be Driver and let Account 3 be the Carrier.
+
+![MetaMask](/img/Metamask.png) After selecting the account, you want, you can click next, and then click connect. After doing these steps you may start using the APP.
 <br />
 
 
