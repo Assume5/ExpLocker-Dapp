@@ -121,11 +121,12 @@ setLocation(string memory location) this allows the chairperson to set access po
 
 # Smart-Contract-Infura
 Before you Infura deployment you need to have following stuff set up.
+```
     1. Metamask installed
     2. Ropsten account with seed phrase (mnemonic)
     3. Infura project endpoint.
     4. truffle-configure.js modified.
-
+```
 After you have these things set up go to directory ExpLocker-contract
 
 Open command line, then type 
